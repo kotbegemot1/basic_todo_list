@@ -30,7 +30,7 @@ def test_xfail():
     assert False
     
 @pytest.mark.xfail(
-    sys.version.startswith("3"),
+    sys.version.startswith("2"),
     reason="supported only in older Python versions")
 def test_xfail_condition():
     assert False
